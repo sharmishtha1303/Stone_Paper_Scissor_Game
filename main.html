@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&family=Inter:wght@800&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek&family=Delius+Unicase:wght@700&family=Inter:wght@800&family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <div>ROCK</div>
+            <div>PAPER</div>
+            <div>SCISSORS</div>
+        </div>  
+        <div class="scorecard">
+            <div class="score com">COMPUTER SCORE
+                <div class="win com">0</div>   
+            </div>
+            <div class="score you"> YOUR  </BR>SCORE
+                <div class="win you">0</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="rock_option">
+            <img src="rock.png" id="rock">
+        </div>
+        <div id="scissors_option">
+            <img src="scissor.png" id="scissor">
+        </div>
+        <div id="paper_option">
+            <img src="paper.png" id="paper">
+        </div>
+        <div>
+            <div class="line first"></div>
+            <div class="line second"></div>
+            <div class="line third"></div>
+        </div>
+    </div>
+    <button id="rules_button">RULES</button>
+    <div class="container">
+        <div id="close">
+            <img src="x background.png" id="close_button">
+            <p id="x">X</p>
+        </div>
+        <h1>Game Rules</h1>
+        <ul class="list">
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li><br>
+            <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li><br>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li><br>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+        </ul>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

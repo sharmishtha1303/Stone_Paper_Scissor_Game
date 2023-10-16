@@ -1,0 +1,263 @@
+body{
+    background-color: #8CC461;
+    overflow-x: hidden;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+@keyframes blinkAnimation1 {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes blinkAnimation2 {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    51% {
+        opacity: 1;
+    }
+}
+
+@keyframes blinkAnimation3 {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    52% {
+        opacity: 1;
+    }
+}
+
+.star {
+    position: absolute;
+}
+
+.s1{
+    width: 115px;
+    height: 115px;
+    top: 188px;
+    left: 488px;
+    animation: blinkAnimation1 3s infinite;
+}
+
+.s2{
+    width: 103px;
+    height: 103px;
+    top: 55px;
+    left: 850px;
+    animation: blinkAnimation2 2s infinite;
+}
+
+.s3{
+    width: 32px;
+    height: 32px;
+    top: 76px;
+    left: 603px;
+    animation: blinkAnimation3 1s infinite;
+}
+
+.s4{
+    width: 32px;
+    height: 32px;
+    top: 109px;
+    left: 725px;
+    animation: blinkAnimation1 3s infinite;
+}
+
+.s5{
+    width: 32px;
+    height: 32px;
+    top: 341px;
+    left: 596px;
+    animation: blinkAnimation2 2s infinite;
+}
+
+.s6{
+    width: 130px;
+    height: 130px;
+    top: 246px;
+    left: 890px;
+    animation: blinkAnimation3 1.7s infinite;
+}
+
+.s7{
+    width: 32px;
+    height: 32px;
+    top: 173px;
+    left: 960px;
+    animation: blinkAnimation1 3s infinite;
+}
+
+.s9{
+    width: 68px;
+    height: 68px;
+    top: 127px;
+    left: 560px;
+    animation: blinkAnimation2 2s infinite;
+}
+
+#trophy{
+    position: absolute;
+    width: 200.43px;
+    height: 201px;
+    top: 170px;
+    left: 675px;
+}
+
+#bigtext{
+    position: absolute;
+    width: 464px;
+    height: 86px;
+    top: 300px;
+    left: 550px;
+    font-size: 91px;
+    font-weight: 600;
+    line-height: 107px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: white;
+}
+
+#smalltext{
+    position: absolute;
+    width: 470px;
+    height: 48px;
+    top: 470px;
+    left: 545px;
+    color: white;
+    font-size: 41px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+#playbutton {
+    position: absolute;
+    width: 174px;
+    height: 44px;
+    top: 580px;
+    left: 690px;
+    border-radius: 9px;
+    background-color: white;
+    border-color: white;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #6B6B6B;
+    border-style: solid;
+    transition: transform 0.2s, background-color 0.2s, color 0.2s;
+}
+
+#rules_button {
+    position: absolute;
+    width: 119px;
+    height: 40px;
+    top: 650px;
+    left: 1350px;
+    border-radius: 10px;
+    border: 2px;
+    border-color: white;
+    color: white;
+    background-color: #8CC461;
+    border-style: solid;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.container{
+    position: fixed;
+    display: none;
+    width: 300px;
+    height: 325px;
+    top: -290px;
+    left: 1140px;
+    border-radius: 13px;
+    border: 7px;
+    background-color: #004429;
+    border-color: #FFFFFF;
+    border-style: solid;
+}
+
+body.rulesTab-active .container{
+    top: 290px;
+}
+
+body.rulesTab-active .container{
+    display: block;
+}
+
+#close_button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 270px;
+    top: -20px;
+    border: 5px;
+}
+
+#x{
+    position: absolute;
+    width: 24px;
+    height: 53px;
+    left: 279px;
+    top: -80px;
+    font-family: 'Dangrek', cursive;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 79px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+h1{
+    position: absolute;
+    width: 160px;
+    height: 27px;
+    left: 75px;
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.list{
+    position: absolute;
+    width: 240px;
+    height: 43px;
+    top: 55px;
+    left: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    list-style-type: square;
+}
+
+ul li::marker {
+    color: #FFD600; 
+    font-size: 18px;
+  }
